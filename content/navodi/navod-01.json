@@ -1,14 +1,8 @@
 {
+  "zalba": "Činjenica  da je Ugovorni organ tražio pojašnjenje nedvosmislenoneprirodno niske cijene **POTVRĐUJE**, da je ponuda grupe koju predstavlja Planet Soft d.o.o. , u tom momentu bila **PRVORANGIRANA PONUDA**, te u potpunosti bila prihvatljiva po svim drugimkriterijumima do momenta traženja *„obrazloženja neprirodno niske cijene“*,što potvrđuje član 17. stav (7) Uputstva za pripremu modela tenderskedokumentacije i ponuda, jer u suprotnom Ugovorni organ ne bi ni tražio obrazloženje neprirodno niske cijene!",
   "broj": 1,
-  "title": "Kratak naslov žalbenog navoda 01",
   "slug": "navod-01",
-  "status": "nacrt",
-  "updated": "2026-04-26",
-  "kratki_sazetak": "Uredi ovaj sažetak: u jednoj do dvije rečenice objasni šta je tvrdnja, šta je organ odgovorio i zašto je navod sporan.",
-  "zalba": "Ovdje zalijepi relevantni dio žalbe. Ako je tekst dug, navedi najbitniji citat i u dokazima dodaj sliku/PDF strane iz žalbe.",
-  "odgovor_organa": "Ovdje zalijepi relevantni dio odgovora organa. Drži se tačnog teksta i navedi stranu dokumenta u dokazima.",
-  "istina": "Ovdje napiši dokumentovanu analizu. Preporuka: piši precizno, npr. 'Dokument X pokazuje...', 'Organ se nije očitovao o...', 'Ovaj zaključak nije u skladu sa...'",
-  "zakljucak": "Kratak zaključak za ovaj navod. Izbjegavaj lične uvrede; neka dokumenti i logika nose argument.",
+  "reference": [],
   "dokazi": [
     {
       "naslov": "Žalba, strana X",
@@ -27,5 +21,11 @@
       "opis": "Dodaj sliku relevantnog dijela odgovora organa i objasni šta tačno pokazuje."
     }
   ],
-  "reference": []
+  "istina": "Ukoliko je prilikom evaluacije ponuda,Ugovorni organ došao u fazu da traži objašnjenje neprirodno niske cijene, znači da je istu ocjenio kao prihvatljivu po svim drugim osnovama, jer u suprotnom ne  bi mogao tražiti objašnjenje od već neprihvatljive ponude (član 17. stav (7) tačka b) Uputstva)! \n\nDa je Ugovorni organ postupao **NEZAKONITO**,potvrđuje i **IZJAVA** jednog od ravnopravnih članova Ugovornog organa – gospodina Vlade Rogića, koji je na javnoj sjednici dao izdvojeno mišljenje, a koje su prenijeli skoro svi mediji u BiH. Naime gospodin Rogić je jasno i nedsvosmisleno potvrdio da je Komisija tražila obrazloženje neprirodno niske cijene od grupe ponuđača koju predvodi Planet Soft, te da je jedini ispravan način bio da se nakon tog pojašnjenja dodijeli ugovor navedenoj grupi ponuđača. \n\n.'",
+  "status": "nacrt",
+  "odgovor_organa": "Komisija za javnu nabavku je postupajuci u skladu s navedenim propisima u postupku pregleda ocjene ponuda samostalno i nezavisno od uticaja Ugovornog Organa izvrsila pregled i ocjenu ponuda i shodno rezultatima provjere zatražila objašnjenje u vezi sa potencijalno neprirodno niskom cijenom.",
+  "title": "Prikrivanje zahtjeva za pojašnjenje neprirodno niske cijene ",
+  "zakljucak": "Jedini pravi zaključak koji se nameće, jeste svjesna namjera Ugovornog organa CIK BiH, da pokuša „prikriti“ da je tražio obrazloženje neprirodno niske cijene! Takođe, napominjemo da je Ugovorni organ imao obavezu da ocijeni (PRIHAVATI ILI ODBIJE) obrazloženje neprirodno niske cijene,a ne da pokuša zataškati da je isto zahtijevao od ponuđača! \n\nOvakvim postupanjem, Ugovorni organ je nagrub način povrijedio pravila postupka, a sve u cilju pogodovanju **FAVORIZOVANOM** ponuđaču.",
+  "updated": "2026-04-26",
+  "kratki_sazetak": "Nezakonito postupanje Ugovornog organa CIK BiH koji pokušava da prikrije činjenicu da je od grupe ponuđača koju predvodi Planet Soft d.o.o. Banja Luka zatražio pojašnjenje neprirodno niske cijene."
 }
