@@ -270,7 +270,7 @@ function renderAboutPage(site) {
 
 function renderNavodiPage(site, navodi) {
   const statuses = [...new Set(navodi.map(n => n.status).filter(Boolean))];
-  const body = `${pageHeader('19 žalbenih navoda', 'Filtriraj navode po statusu ili pretraži naslov, sažetak i opis.', [{ href: '/', label: 'Početna' }, { label: '19 žalbenih navoda' }])}
+  const body = `${pageHeader('Žalbeni navodi, 'Filtriraj navode po statusu ili pretraži naslov, sažetak i opis.', [{ href: '/', label: 'Početna' }, { label: 'Žalbeni navodi' }])}
 <section class="section"><div class="container">
   <div class="filterbar">
     <input class="searchbox" type="search" data-search placeholder="Pretraži navode..." aria-label="Pretraži navode">
@@ -291,7 +291,7 @@ function renderNavodiPage(site, navodi) {
     </article>`).join('')}
   </div>
 </div></section>`;
-  return layout({ site, title: '19 žalbenih navoda', description: 'Pregled svih žalbenih navoda.', current: 'navodi', body });
+  return layout({ site, title: 'Žalbeni navodi', description: 'Pregled svih žalbenih navoda.', current: 'navodi', body });
 }
 
 function renderEvidence(d) {
