@@ -1,28 +1,28 @@
 {
+  "contact": {
+    "email": "cikkriminal@gmail.com",
+    "napomena": "Za ispravke, pravo na odgovor ili dostavu dodatne dokumentacije pišite na navedenu adresu."
+  },
   "site_name": "CIK Kriminal",
-  "site_subtitle": "Dokumentovani pregled žalbe, odgovora organa i spornih činjenica",
   "domain": "https://cikkriminal.com",
-  "language": "bs",
   "author": "Unesite ime/autora",
+  "site_subtitle": "Dokumentovani pregled žalbe, odgovora Ugovornog organa CIK BiH i spornih činjenica",
   "noindex": true,
   "last_updated": "2026-04-26",
-  "home": {
-    "hero_title": "Analiza 19 žalbenih navoda",
-    "hero_lead": "Ovaj sajt je strukturisan kao javni dosije: šta je navedeno u žalbi, šta je odgovorio organ i šta dokumenti pokazuju.",
-    "cta_primary_label": "Pregled svih navoda",
-    "cta_secondary_label": "Dokumenti"
-  },
+  "legal_note": "Sadržaj predstavlja dokumentovano tumačenje dostupnih dokumenata. Ako smatrate da je nešto netačno ili nepotpuno, dostavite ispravku ili odgovor koji će biti razmotren i, ako je relevantan, objavljen uz odgovarajući navod.",
+  "language": "bs",
   "predmet": {
     "organ": "Naziv organa koji je odlučivao",
     "broj_predmeta": "Unesite broj predmeta",
     "datum_zalbe": "2026-03-12",
     "datum_odgovora": "2026-04-05",
     "kratak_opis": "Kratko opiši predmet, bez uvreda i bez tvrdnji koje ne možeš potkrijepiti dokumentima.",
-    "metodologija": "Za svaki navod objavljujem tri odvojene cjeline: tekst žalbenog navoda, odgovor organa i dokumentovanu analizu. Slike i prilozi služe da čitalac može provjeriti navode na osnovu izvora. Lični podaci koji nisu nužni za razumijevanje predmeta treba da budu zatamnjeni prije objave."
+    "metodologija": "Za svaki navod objavljuju se tri odvojene cjeline: tekst žalbenog navoda, odgovor organa i dokumentovanu analizu. Slike i prilozi služe da čitalac može provjeriti navode na osnovu izvora. Lični podaci koji nisu nužni za razumijevanje predmeta su zatamnjeni prije objave."
   },
-  "contact": {
-    "email": "kontakt@cikkriminal.com",
-    "napomena": "Za ispravke, pravo na odgovor ili dostavu dodatne dokumentacije pišite na navedenu adresu."
-  },
-  "legal_note": "Sadržaj predstavlja lično dokumentovano tumačenje dostupnih dokumenata. Ako smatrate da je nešto netačno ili nepotpuno, dostavite ispravku ili odgovor koji će biti razmotren i, ako je relevantan, objavljen uz odgovarajući navod."
+  "home": {
+    "hero_title": "Analiza žalbenih navoda",
+    "hero_lead": "Ovaj sajt je strukturisan kao javni dosije: šta je navedeno u žalbi, šta je odgovorio Ugovorno organ CIK BiH i šta dokumenti pokazuju.",
+    "cta_primary_label": "Pregled svih navoda",
+    "cta_secondary_label": "Dokumenti"
+  }
 }
