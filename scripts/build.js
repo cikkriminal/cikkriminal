@@ -116,7 +116,7 @@ function navLinks(current) {
   const links = [
     ['/', 'Početna', 'home'],
     ['/o-predmetu/', 'O predmetu', 'predmet'],
-    ['/navodi/', '19 navoda', 'navodi'],
+    ['/navodi/', 'Žalbeni navodi', 'navodi'],
     ['/dokumenti/', 'Dokumenti', 'dokumenti'],
     ['/vremenska-linija/', 'Vremenska linija', 'timeline'],
     ['/metodologija/', 'Metodologija', 'metodologija'],
