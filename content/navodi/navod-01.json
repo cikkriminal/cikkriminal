@@ -3,24 +3,7 @@
   "broj": 1,
   "slug": "navod-01",
   "reference": [],
-  "dokazi": [
-    {
-      "naslov": "Žalba, strana X",
-      "vrsta": "zalba",
-      "dokument": "Žalba",
-      "strana": "X",
-      "slika": "",
-      "opis": "Dodaj sliku relevantnog dijela žalbe i objasni šta tačno dokazuje."
-    },
-    {
-      "naslov": "Odgovor organa, strana Y",
-      "vrsta": "odgovor_organa",
-      "dokument": "Odgovor organa",
-      "strana": "Y",
-      "slika": "",
-      "opis": "Dodaj sliku relevantnog dijela odgovora organa i objasni šta tačno pokazuje."
-    }
-  ],
+  "dokazi": [],
   "istina": "Ukoliko je prilikom evaluacije ponuda,Ugovorni organ došao u fazu da traži objašnjenje neprirodno niske cijene, znači da je istu ocjenio kao prihvatljivu po svim drugim osnovama, jer u suprotnom ne  bi mogao tražiti objašnjenje od već neprihvatljive ponude (član 17. stav (7) tačka b) Uputstva)! \n\nDa je Ugovorni organ postupao **NEZAKONITO**,potvrđuje i **IZJAVA** jednog od ravnopravnih članova Ugovornog organa – gospodina Vlade Rogića, koji je na javnoj sjednici dao izdvojeno mišljenje, a koje su prenijeli skoro svi mediji u BiH. Naime gospodin Rogić je jasno i nedsvosmisleno potvrdio da je Komisija tražila obrazloženje neprirodno niske cijene od grupe ponuđača koju predvodi Planet Soft, te da je jedini ispravan način bio da se nakon tog pojašnjenja dodijeli ugovor navedenoj grupi ponuđača. \n\n.'",
   "status": "objavljeno",
   "odgovor_organa": "Komisija za javnu nabavku je postupajuci u skladu s navedenim propisima u postupku pregleda ocjene ponuda samostalno i nezavisno od uticaja Ugovornog Organa izvrsila pregled i ocjenu ponuda i shodno rezultatima provjere zatražila objašnjenje u vezi sa potencijalno neprirodno niskom cijenom.",
