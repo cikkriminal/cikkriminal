@@ -1,0 +1,17 @@
+{
+  "name": "cikkriminal-static",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Statički sajt + Decap CMS za dokumentovani pregled žalbe i odgovora organa.",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "serve": "node scripts/serve.js",
+    "dev": "npm run build && node scripts/serve.js",
+    "cms:local": "npx decap-server"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "date": "2026-03-12",
+      "title": "Podnesena žalba",
+      "description": "Unesi stvarni datum i kratak opis podnošenja žalbe."
+    },
+    {
+      "date": "2026-03-20",
+      "title": "Organ zaprimio žalbu",
+      "description": "Dodaj dokaz o prijemu, broj protokola ili relevantnu napomenu."
+    },
+    {
+      "date": "2026-04-05",
+      "title": "Organ donio odluku/odgovor",
+      "description": "Unesi broj i datum akta kojim je žalba odbijena."
+    },
+    {
+      "date": "2026-04-26",
+      "title": "Objavljena javna analiza",
+      "description": "Početak objave strukturisane analize žalbenih navoda."
+    }
+  ]
+}

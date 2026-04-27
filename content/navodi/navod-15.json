@@ -1,0 +1,31 @@
+{
+  "broj": 15,
+  "title": "Kratak naslov žalbenog navoda 15",
+  "slug": "navod-15",
+  "status": "nacrt",
+  "updated": "2026-04-26",
+  "kratki_sazetak": "Uredi ovaj sažetak: u jednoj do dvije rečenice objasni šta je tvrdnja, šta je organ odgovorio i zašto je navod sporan.",
+  "zalba": "Ovdje zalijepi relevantni dio žalbe. Ako je tekst dug, navedi najbitniji citat i u dokazima dodaj sliku/PDF strane iz žalbe.",
+  "odgovor_organa": "Ovdje zalijepi relevantni dio odgovora organa. Drži se tačnog teksta i navedi stranu dokumenta u dokazima.",
+  "istina": "Ovdje napiši dokumentovanu analizu. Preporuka: piši precizno, npr. 'Dokument X pokazuje...', 'Organ se nije očitovao o...', 'Ovaj zaključak nije u skladu sa...'",
+  "zakljucak": "Kratak zaključak za ovaj navod. Izbjegavaj lične uvrede; neka dokumenti i logika nose argument.",
+  "dokazi": [
+    {
+      "naslov": "Žalba, strana X",
+      "vrsta": "zalba",
+      "dokument": "Žalba",
+      "strana": "X",
+      "slika": "",
+      "opis": "Dodaj sliku relevantnog dijela žalbe i objasni šta tačno dokazuje."
+    },
+    {
+      "naslov": "Odgovor organa, strana Y",
+      "vrsta": "odgovor_organa",
+      "dokument": "Odgovor organa",
+      "strana": "Y",
+      "slika": "",
+      "opis": "Dodaj sliku relevantnog dijela odgovora organa i objasni šta tačno pokazuje."
+    }
+  ],
+  "reference": []
+}

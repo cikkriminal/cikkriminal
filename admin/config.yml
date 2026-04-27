@@ -1,0 +1,184 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+publish_mode: editorial_workflow
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+site_url: "https://cikkriminal.com"
+display_url: "https://cikkriminal.com"
+logo_url: "/assets/img/logo.svg"
+locale: "bs"
+
+collections:
+  - name: "settings"
+    label: "Podešavanja"
+    files:
+      - label: "Osnovna podešavanja sajta"
+        name: "site"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Naziv sajta", name: "site_name", widget: "string" }
+          - { label: "Podnaslov", name: "site_subtitle", widget: "string" }
+          - { label: "Domena", name: "domain", widget: "string", default: "https://cikkriminal.com" }
+          - { label: "Jezik", name: "language", widget: "string", default: "bs" }
+          - { label: "Autor", name: "author", widget: "string", required: false }
+          - { label: "Noindex dok je u pripremi", name: "noindex", widget: "boolean", default: true, hint: "Ostavi uključeno dok sajt nije spreman za javnu indeksaciju." }
+          - { label: "Zadnje ažuriranje", name: "last_updated", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+          - label: "Početna"
+            name: "home"
+            widget: "object"
+            fields:
+              - { label: "Glavni naslov", name: "hero_title", widget: "string" }
+              - { label: "Uvod", name: "hero_lead", widget: "text" }
+              - { label: "Tekst primarnog dugmeta", name: "cta_primary_label", widget: "string" }
+              - { label: "Tekst sekundarnog dugmeta", name: "cta_secondary_label", widget: "string" }
+          - label: "Predmet"
+            name: "predmet"
+            widget: "object"
+            fields:
+              - { label: "Organ", name: "organ", widget: "string" }
+              - { label: "Broj predmeta", name: "broj_predmeta", widget: "string", required: false }
+              - { label: "Datum žalbe", name: "datum_zalbe", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false }
+              - { label: "Datum odgovora", name: "datum_odgovora", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false }
+              - { label: "Kratak opis", name: "kratak_opis", widget: "text" }
+              - { label: "Metodologija", name: "metodologija", widget: "markdown" }
+          - label: "Kontakt"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "E-mail", name: "email", widget: "string", required: false }
+              - { label: "Napomena", name: "napomena", widget: "text", required: false }
+          - { label: "Pravna napomena", name: "legal_note", widget: "text" }
+      - label: "Vremenska linija"
+        name: "vremenska_linija"
+        file: "content/vremenska-linija.json"
+        format: "json"
+        fields:
+          - label: "Događaji"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.date}} — {{fields.title}}"
+            fields:
+              - { label: "Datum", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+              - { label: "Naslov", name: "title", widget: "string" }
+              - { label: "Opis", name: "description", widget: "text", required: false }
+
+  - name: "navodi"
+    label: "Žalbeni navodi"
+    label_singular: "Žalbeni navod"
+    folder: "content/navodi"
+    create: true
+    delete: false
+    extension: "json"
+    format: "json"
+    identifier_field: "title"
+    slug: "{{fields.slug}}"
+    summary: "Navod {{fields.broj}} — {{title}}"
+    sortable_fields: ["broj", "title", "status", "updated"]
+    view_groups:
+      - label: "Status"
+        field: "status"
+    preview_path: "navodi/{{fields.slug}}/"
+    fields:
+      - { label: "Broj navoda", name: "broj", widget: "number", value_type: "int", min: 1, max: 99 }
+      - { label: "Naslov", name: "title", widget: "string" }
+      - { label: "Slug / URL", name: "slug", widget: "string", hint: "Primjer: navod-01-nezakonito-utvrdjeno-stanje" }
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        options:
+          - { label: "Nacrt", value: "nacrt" }
+          - { label: "Objavljeno", value: "objavljeno" }
+          - { label: "Dopunjeno", value: "dopunjeno" }
+          - { label: "Čeka odgovor", value: "ceka_odgovor" }
+          - { label: "Sporno", value: "sporno" }
+      - { label: "Zadnje ažuriranje", name: "updated", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false }
+      - { label: "Kratki sažetak", name: "kratki_sazetak", widget: "text" }
+      - { label: "Šta sam napisao u žalbi", name: "zalba", widget: "markdown" }
+      - { label: "Šta je odgovorio organ", name: "odgovor_organa", widget: "markdown" }
+      - { label: "Šta je istina / dokumentovana analiza", name: "istina", widget: "markdown" }
+      - { label: "Zaključak", name: "zakljucak", widget: "markdown" }
+      - label: "Dokazi / slike"
+        name: "dokazi"
+        widget: "list"
+        required: false
+        summary: "{{fields.naslov}}"
+        fields:
+          - { label: "Naslov dokaza", name: "naslov", widget: "string" }
+          - label: "Vrsta"
+            name: "vrsta"
+            widget: "select"
+            options:
+              - { label: "Žalba", value: "zalba" }
+              - { label: "Odgovor organa", value: "odgovor_organa" }
+              - { label: "Prilog", value: "prilog" }
+              - { label: "Drugo", value: "drugo" }
+          - { label: "Dokument", name: "dokument", widget: "string", required: false }
+          - { label: "Strana", name: "strana", widget: "string", required: false }
+          - { label: "Slika / sken", name: "slika", widget: "image", required: false }
+          - { label: "Opis šta dokaz pokazuje", name: "opis", widget: "markdown" }
+      - label: "Dodatne reference"
+        name: "reference"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Tekst", name: "label", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+
+  - name: "dokumenti"
+    label: "Dokumenti"
+    folder: "content/dokumenti"
+    create: true
+    extension: "json"
+    format: "json"
+    identifier_field: "title"
+    slug: "{{fields.slug}}"
+    summary: "{{title}}"
+    fields:
+      - { label: "Naslov", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Datum", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false }
+      - label: "Vrsta"
+        name: "kind"
+        widget: "select"
+        options:
+          - { label: "Žalba", value: "zalba" }
+          - { label: "Odgovor organa", value: "odgovor_organa" }
+          - { label: "Prilog", value: "prilog" }
+          - { label: "Dopis", value: "dopis" }
+          - { label: "Drugo", value: "drugo" }
+      - { label: "PDF/fajl", name: "file", widget: "file", required: false }
+      - { label: "Broj strana", name: "pages", widget: "string", required: false }
+      - { label: "Sažetak", name: "summary", widget: "text" }
+      - label: "Status redakcije"
+        name: "redaction_status"
+        widget: "select"
+        options:
+          - { label: "Potrebna redakcija", value: "potrebna_redakcija" }
+          - { label: "Redigovano", value: "redigovano" }
+          - { label: "Objavljeno bez ličnih podataka", value: "redigovano" }
+
+  - name: "azuriranja"
+    label: "Ažuriranja"
+    folder: "content/azuriranja"
+    create: true
+    extension: "json"
+    format: "json"
+    identifier_field: "title"
+    slug: "{{fields.slug}}"
+    summary: "{{fields.date}} — {{title}}"
+    fields:
+      - { label: "Naslov", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Datum", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        options:
+          - { label: "Nacrt", value: "nacrt" }
+          - { label: "Objavljeno", value: "objavljeno" }
+      - { label: "Sažetak", name: "summary", widget: "text" }
+      - { label: "Tekst", name: "body", widget: "markdown" }
