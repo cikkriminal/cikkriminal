@@ -270,7 +270,7 @@ function renderAboutPage(site) {
 
 function renderNavodiPage(site, navodi) {
   const statuses = [...new Set(navodi.map(n => n.status).filter(Boolean))];
-  const body = `${pageHeader('Žalbeni navodi, 'Filtriraj navode po statusu ili pretraži naslov, sažetak i opis.', [{ href: '/', label: 'Početna' }, { label: 'Žalbeni navodi' }])}
+  const body = `${pageHeader('Žalbeni navodi', 'Filtriraj navode po statusu ili pretraži naslov, sažetak i opis.', [{ href: '/', label: 'Početna' }, { label: 'Žalbeni navodi' }])}
 <section class="section"><div class="container">
   <div class="filterbar">
     <input class="searchbox" type="search" data-search placeholder="Pretraži navode..." aria-label="Pretraži navode">
